@@ -31,7 +31,7 @@ class FractalTreeObj {
   } 
   public void drawBranches(int x, int y, double branchLength, double angle, int branchnum) 
   {   
-    strokeWeight(15-branchnum);
+    strokeWeight(maxBranches-branchnum+1);
     if (branchnum < maxBranches/4) {
       int temp = maxBranches/4;
       int tempb = branchnum - 0;

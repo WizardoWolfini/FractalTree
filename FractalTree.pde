@@ -2,7 +2,7 @@ ArrayList<FractalTreeObj> trees = new ArrayList<FractalTreeObj>();
 int dt = 0;
 int dt2 = 0;
 int index = 0;
-int[] cd = {11,60,25,5,30,30,30};
+int[] cd = {71,10,13,7,30,30,30};
 public void setup() 
 {   
   frameRate(60);
@@ -11,7 +11,7 @@ public void setup()
   //trees.add(new FractalTreeObj(600, 300, 2));
   // trees.add(new FractalTreeObj(900, 300, 3));
   // trees.add(new FractalTreeObj(300, 600, 4));
-  trees.add(new FractalTreeObj(600, 600, 14));
+  trees.add(new FractalTreeObj(600, 600, 1));
   // trees.add(new FractalTreeObj(900, 600, 6));
   //trees.add(new FractalTreeObj(300, 900, 7));
   //trees.add(new FractalTreeObj(600, 900, 8));
@@ -25,8 +25,8 @@ public void draw()
     if(index < cd.length - 1){
     index++;
     }else{
-    index = 2;
-    }
+    index = 1;
+   }
   } else {
     if(dt2 == 0){
     dt++;
